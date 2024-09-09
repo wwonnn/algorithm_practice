@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-    unsigned long int a,b,c;
+    unsigned long a,b,c;
     scanf("%ld %ld %ld", &a, &b, &c);
     printf("%ld", a+b+c);
     
