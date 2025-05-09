@@ -8,19 +8,19 @@ int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
 
-    vector<int> distance;
-    vector<int> cost;
+    vector<long long> distance;
+    vector<long long> cost;
     
     int n;
     cin >> n;
 
     for (int i = 0; i < n - 1; i++) {
-        int d;
+        long long d;
         cin >> d;
         distance.push_back(d);
     }
     for (int i = 0; i < n; i++) {
-        int c;
+        long long c;
         cin >> c;
         cost.push_back(c);
     }
