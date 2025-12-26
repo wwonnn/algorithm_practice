@@ -7,13 +7,11 @@ using namespace std;
 
 int N;
 string result;
-string min_num;
 
 void backtracking(int count) {
 	if (count >= N) {
 		cout << result;
 		exit(0);
-		return;
 	}
 
 	for (int i = 1; i <= 3; i++) {
@@ -49,12 +47,5 @@ int main() {
 
 	cin >> N;
 
-	// 최댓값 초기화
-	for (int i = 0; i < N; i++) {
-		min_num += to_string(9);
-	}
-
 	backtracking(0);
-
-	cout << min_num;
 }
